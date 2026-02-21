@@ -1,0 +1,248 @@
+/* ═══════════════════════════════════════════
+   CENEL MEINTJES — Shared Stylesheet
+   Used by: index.html, about.html, toolkit.html, contact.html
+═══════════════════════════════════════════ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:  #0f2744;
+  --blue:  #1b5e9b;
+  --sky:   #3b9de1;
+  --gold:  #e8a020;
+  --cream: #fdf8f2;
+  --white: #ffffff;
+  --grey:  #6b7a8d;
+  --light: #eef4fb;
+  --border:#e0e8f2;
+  --font:  Arial, Helvetica, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  background: var(--cream);
+  color: var(--navy);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* ── NAV ── */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 64px;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+
+.nav-brand {
+  font-family: var(--font);
+  font-weight: 700;
+  color: var(--white);
+  font-size: 1.15rem;
+  text-decoration: none;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+
+.nav-brand span { color: var(--gold); }
+
+.nav-links {
+  display: flex;
+  gap: 6px;
+  list-style: none;
+}
+
+.nav-links a {
+  display: block;
+  color: rgba(255,255,255,0.6);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.nav-links a:hover {
+  color: var(--white);
+  background: rgba(255,255,255,0.09);
+}
+
+.nav-links a.active {
+  color: var(--white);
+  background: var(--blue);
+}
+
+/* Hamburger for mobile */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+/* ── HERO (reusable dark banner) ── */
+.page-hero {
+  background: var(--navy);
+  position: relative;
+  overflow: hidden;
+  padding: 72px 24px 64px;
+  text-align: center;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 15% 50%, rgba(59,157,225,0.15) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 80% at 85% 20%, rgba(27,94,155,0.3) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.page-hero h1 {
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  color: var(--white);
+  line-height: 1.15;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.page-hero h1 em { font-style: italic; color: var(--sky); }
+
+.page-hero p {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.6);
+  max-width: 540px;
+  margin: 0 auto;
+  line-height: 1.75;
+  position: relative;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(232,160,32,0.15);
+  border: 1px solid rgba(232,160,32,0.4);
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 6px 18px;
+  border-radius: 100px;
+  margin-bottom: 22px;
+  position: relative;
+}
+
+.hero-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 28px;
+  position: relative;
+}
+
+.hero-pill {
+  background: rgba(255,255,255,0.09);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.85);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 100px;
+}
+
+.hero-pill span { color: var(--gold); margin-right: 5px; }
+
+/* ── CONTENT WRAPPER ── */
+.page-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 52px 24px 80px;
+}
+
+.wide-wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ── SECTION HEADINGS ── */
+.section-heading {
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--navy);
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 6px;
+  margin-bottom: 28px;
+  display: inline-block;
+}
+
+.section-block { margin-bottom: 56px; }
+
+/* ── CARDS ── */
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px;
+}
+
+/* ── GRID UTILITIES ── */
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+.grid-4 { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+
+/* ── INTRO STRIP ── */
+.intro-strip {
+  background: var(--blue);
+  color: var(--white);
+  text-align: center;
+  padding: 22px 24px;
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+.intro-strip strong { color: var(--gold); }
+
+/* ── FOOTER ── */
+.site-footer {
+  background: var(--navy);
+  text-align: center;
+  padding: 28px 24px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.35);
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.site-footer a {
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 700px) {
+  .site-nav { padding: 0 18px; }
+  .nav-links { display: none; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: var(--navy); padding: 12px 18px 18px; gap: 4px; z-index: 300; }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: 12px 16px; border-radius: 8px; }
+  .nav-toggle { display: block; }
+  .page-hero { padding: 52px 18px 44px; }
+  .page-wrap { padding: 36px 18px 60px; }
+}
