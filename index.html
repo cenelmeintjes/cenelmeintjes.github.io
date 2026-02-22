@@ -79,10 +79,10 @@
       <span class="qn-link">View Profile →</span>
     </a>
     <a href="apps-remote-toolkit.html" class="qn-card">
-      <span class="qn-icon">🛠️</span>
-      <div class="qn-title">Apps Remote Toolkit</div>
-      <div class="qn-desc">50+ best apps for remote professionals across 11 categories — including a free starter stack.</div>
-      <span class="qn-link">Explore Apps →</span>
+      <span class="qn-icon">📖</span>
+      <div class="qn-title">Apps Remote Toolkit — PDF Guide</div>
+      <div class="qn-desc">A curated <strong>downloadable PDF guide</strong> reviewing 50+ apps across 11 categories — with pro tips and setup instructions. <em>This is a guide document, not software.</em></div>
+      <span class="qn-link">View Guide →</span>
     </a>
     <a href="contact.html" class="qn-card">
       <span class="qn-icon">✉️</span>
@@ -155,11 +155,74 @@
 <footer class="site-footer">
   © 2025 Cenel Cecelia Meintjes &nbsp;·&nbsp;
   <a href="mailto:cecelia.meintjes@gmail.com">cecelia.meintjes@gmail.com</a> &nbsp;·&nbsp;
-  <a href="contact.html">Contact</a>
+  <a href="contact.html">Contact</a><br/>
+  <span style="font-size:11px;opacity:0.6;display:block;margin-top:6px;">
+    As an Amazon Associate I earn from qualifying purchases. &nbsp;|&nbsp;
+    All tools listed have their own free/paid plans. Purchase of this guide does not include any software licenses.
+  </span>
 </footer>
+
+<!-- ══ COOKIE CONSENT BANNER ══ -->
+<div id="cookie-banner" style="
+  position:fixed; bottom:0; left:0; right:0; z-index:9999;
+  background:#0f2744; color:#fff;
+  padding:16px 24px; display:flex; align-items:center;
+  justify-content:space-between; flex-wrap:wrap; gap:12px;
+  box-shadow:0 -4px 20px rgba(0,0,0,0.3);
+  font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:1.6;">
+  <div style="flex:1; min-width:260px;">
+    🍪 <strong>This website uses cookies</strong> to improve your browsing experience.
+    By clicking <strong>"Accept"</strong> you consent to our use of cookies.<br/>
+    <span style="font-size:11px; color:rgba(255,255,255,0.6);">
+      As an Amazon Associate I earn from qualifying purchases. &nbsp;|&nbsp;
+      Affiliate links may appear on this site — I may earn a small commission at no extra cost to you.
+    </span>
+  </div>
+  <button onclick="acceptCookies()" style="
+    background:#e8a020; color:#0f2744; border:none;
+    font-family:Arial,Helvetica,sans-serif; font-weight:700;
+    font-size:13px; padding:10px 28px; border-radius:100px;
+    cursor:pointer; white-space:nowrap; flex-shrink:0;">
+    ✓ Accept
+  </button>
+</div>
 
 <script>
   function toggleNav() { document.getElementById('nav-links').classList.toggle('open'); }
+  function acceptCookies() {
+    document.getElementById('cookie-banner').style.display = 'none';
+    localStorage.setItem('cookiesAccepted', 'true');
+  }
+  if (localStorage.getItem('cookiesAccepted') === 'true') {
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
 </script>
+
+
+
+<!-- ══ COOKIE & AMAZON DISCLOSURE BANNER ══ -->
+<div id="cookie-banner" style="position:fixed; bottom:0; left:0; right:0; z-index:9999; background:#0f2744; border-top:3px solid #e8a020; padding:16px 24px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:14px; box-shadow:0 -4px 20px rgba(0,0,0,0.3);">
+  <div style="flex:1; min-width:260px;">
+    <p style="color:#fff; font-size:13px; line-height:1.65; margin:0 0 4px;">
+      🍪 <strong style="color:#e8a020;">This site uses cookies</strong> to improve your browsing experience. By clicking <strong>Accept</strong> you consent to our use of cookies.
+    </p>
+    <p style="color:rgba(255,255,255,0.5); font-size:11px; margin:0; line-height:1.5;">
+      As an Amazon Associate I earn from qualifying purchases. &nbsp;|&nbsp; Some links on this site are affiliate links — I may earn a small commission at no extra cost to you.
+    </p>
+  </div>
+  <button onclick="acceptCookies()" style="background:#e8a020; color:#0f2744; border:none; font-family:Arial,Helvetica,sans-serif; font-weight:700; font-size:13px; padding:10px 26px; border-radius:100px; cursor:pointer; white-space:nowrap; flex-shrink:0;">
+    ✓ Accept
+  </button>
+</div>
+<script>
+  function acceptCookies() {
+    document.getElementById("cookie-banner").style.display = "none";
+    localStorage.setItem("cookiesAccepted", "true");
+  }
+  if (localStorage.getItem("cookiesAccepted") === "true") {
+    document.getElementById("cookie-banner").style.display = "none";
+  }
+</script>
+
 </body>
 </html>

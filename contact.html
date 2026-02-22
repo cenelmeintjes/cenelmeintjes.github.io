@@ -146,5 +146,32 @@
 <script>
   function toggleNav() { document.getElementById('nav-links').classList.toggle('open'); }
 </script>
+
+
+
+<!-- ══ COOKIE & AMAZON DISCLOSURE BANNER ══ -->
+<div id="cookie-banner" style="position:fixed; bottom:0; left:0; right:0; z-index:9999; background:#0f2744; border-top:3px solid #e8a020; padding:16px 24px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:14px; box-shadow:0 -4px 20px rgba(0,0,0,0.3);">
+  <div style="flex:1; min-width:260px;">
+    <p style="color:#fff; font-size:13px; line-height:1.65; margin:0 0 4px;">
+      🍪 <strong style="color:#e8a020;">This site uses cookies</strong> to improve your browsing experience. By clicking <strong>Accept</strong> you consent to our use of cookies.
+    </p>
+    <p style="color:rgba(255,255,255,0.5); font-size:11px; margin:0; line-height:1.5;">
+      As an Amazon Associate I earn from qualifying purchases. &nbsp;|&nbsp; Some links on this site are affiliate links — I may earn a small commission at no extra cost to you.
+    </p>
+  </div>
+  <button onclick="acceptCookies()" style="background:#e8a020; color:#0f2744; border:none; font-family:Arial,Helvetica,sans-serif; font-weight:700; font-size:13px; padding:10px 26px; border-radius:100px; cursor:pointer; white-space:nowrap; flex-shrink:0;">
+    ✓ Accept
+  </button>
+</div>
+<script>
+  function acceptCookies() {
+    document.getElementById("cookie-banner").style.display = "none";
+    localStorage.setItem("cookiesAccepted", "true");
+  }
+  if (localStorage.getItem("cookiesAccepted") === "true") {
+    document.getElementById("cookie-banner").style.display = "none";
+  }
+</script>
+
 </body>
 </html>
