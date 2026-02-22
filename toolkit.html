@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apps Remote Toolkit | Cenel Meintjes</title>
+  <meta name="description" content="50+ best apps for remote professionals. 11 categories, free starter stack, updated 2025-2026." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .section-label { display:flex; align-items:center; gap:13px; margin:56px 0 22px; }
+    .section-label .num { background:var(--navy); color:var(--white); font-family:Arial,Helvetica,sans-serif;font-weight:700; font-size:.95rem; width:32px; height:32px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .section-label h2 { font-family:Arial,Helvetica,sans-serif;font-weight:700; font-size:1.4rem; color:var(--navy); border-bottom:2px solid var(--gold); padding-bottom:2px; }
+    .section-label .icon { font-size:1.2rem; }
+    .tool-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(285px,1fr)); gap:15px; }
+    .tool-card { background:var(--white); border:1px solid var(--border); border-radius:12px; padding:18px 18px 15px; transition:transform .2s,box-shadow .2s; }
+    .tool-card:hover { transform:translateY(-3px); box-shadow:0 10px 28px rgba(15,39,68,.1); }
+    .tool-name { font-weight:600; font-size:.95rem; color:var(--blue); margin-bottom:4px; }
+    .tool-tag { font-size:12px; color:var(--grey); margin-bottom:10px; line-height:1.5; }
+    .tool-best { font-size:12.5px; color:var(--navy); line-height:1.55; border-top:1px solid #edf2f8; padding-top:10px; margin-top:10px; }
+    .tool-best strong { color:var(--blue); }
+    .tool-best a { color:var(--blue); font-weight:600; }
+    .badge-row { display:flex; gap:5px; margin-bottom:9px; flex-wrap:wrap; }
+    .badge { font-size:10px; font-weight:600; letter-spacing:.05em; padding:3px 9px; border-radius:100px; text-transform:uppercase; }
+    .badge.free { background:#e6f7ec; color:#1a7a3c; }
+    .badge.paid { background:#fef3e2; color:#9a5f0a; }
+    .badge.ai   { background:#ede9fe; color:#5b3fae; }
+    .badge.new  { background:#fde8f0; color:#b02a60; }
+    .tip { background:var(--light); border-left:4px solid var(--sky); border-radius:0 10px 10px 0; padding:13px 17px; margin:16px 0 5px; font-size:13px; color:var(--navy); line-height:1.65; }
+    .tip strong { color:var(--blue); }
+    .starter { background:var(--navy); border-radius:18px; padding:44px 36px; margin:64px 0 48px; color:var(--white); }
+    .starter h2 { font-family:Arial,Helvetica,sans-serif;font-weight:700; font-size:1.9rem; margin-bottom:6px; }
+    .starter h2 em { color:var(--gold); font-style:italic; }
+    .starter-sub { color:rgba(255,255,255,.55); font-size:.9rem; margin-bottom:30px; }
+    .stack-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:11px; }
+    .stack-item { background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.12); border-radius:10px; padding:13px 17px; display:flex; align-items:flex-start; gap:11px; }
+    .si-icon { font-size:1.2rem; flex-shrink:0; margin-top:2px; }
+    .si-cat { font-size:10px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--gold); margin-bottom:3px; }
+    .si-tools { font-size:13px; color:rgba(255,255,255,.82); line-height:1.4; }
+    .free-banner { margin-top:26px; text-align:center; background:rgba(232,160,32,.12); border:1px solid rgba(232,160,32,.3); border-radius:10px; padding:18px 22px; color:var(--gold); font-size:1rem; font-weight:600; }
+    .free-banner span { display:block; font-size:.82rem; font-weight:400; color:rgba(255,255,255,.45); margin-top:4px; }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-brand">Cenel <span>Meintjes</span></a>
+  <button class="nav-toggle" onclick="toggleNav()" aria-label="Menu">☰</button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="about.html">👤 About Me</a></li>
+    <li><a href="toolkit.html" class="active">📱 Apps Remote Toolkit</a></li>
+    <li><a href="contact.html">✉️ Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <div class="hero-badge">✦ Remote Work Resource — Updated 2025–2026</div>
+  <h1>Apps <em>Remote</em> Toolkit</h1>
+  <p>50+ hand-picked apps for remote professionals — with free plan options, honest pricing, and a zero-cost starter stack.</p>
+  <div class="hero-pills">
+    <div class="hero-pill"><span>📋</span>11 Categories</div>
+    <div class="hero-pill"><span>📱</span>50+ Apps Reviewed</div>
+    <div class="hero-pill"><span>💸</span>Free Starter Stack</div>
+    <div class="hero-pill"><span>🌍</span>Remote-First</div>
+  </div>
+</div>
+
+<div class="intro-strip">
+  Every tool selected for <strong>ease of use, free plan availability,</strong> and <strong>real-world adoption</strong> by VA and EA professionals globally.
+</div>
+
+<div class="wide-wrap">
+
+  <div class="section-label"><div class="num">1</div><div class="icon">💬</div><h2>Communication &amp; Messaging</h2></div>
+  <div class="tool-grid">
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">Slack</div><div class="tool-tag">Industry-standard team messaging platform</div><div class="tool-best"><strong>Best for:</strong> Organising client communication into channels, file sharing, and quick huddles. Pro from $7.25/user/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">Microsoft Teams</div><div class="tool-tag">Chat, calls, and file collaboration in one place</div><div class="tool-best"><strong>Best for:</strong> EAs within corporate Microsoft 365 environments — full Word, Excel, and Outlook integration. From $4/user/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">Zoom</div><div class="tool-tag">Gold standard for HD video meetings and screen sharing</div><div class="tool-best"><strong>Best for:</strong> Client calls, onboarding, and team meetings. Almost every client already uses Zoom. Pro from $12.49/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">Google Meet</div><div class="tool-tag">Free browser-based video calls — no downloads needed</div><div class="tool-best"><strong>Best for:</strong> Quick calls with Gmail or Google Workspace clients. Included in Workspace from $6/user/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">Loom</div><div class="tool-tag">Record and share short screen videos instead of long emails</div><div class="tool-best"><strong>Best for:</strong> Async video walkthroughs, tutorials, and status updates without scheduling a call. Business from $12.50/user/month.</div></div>
+  </div>
+  <div class="tip">💡 <strong>Tip:</strong> Start with Slack's free plan. Set up Loom from week one — a 2-minute screen walkthrough replaces a long email every time.</div>
+
+  <div class="section-label"><div class="num">2</div><div class="icon">📅</div><h2>Scheduling &amp; Calendar Management</h2></div>
+  <div class="tool-grid">
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">Calendly</div><div class="tool-tag">Automated scheduling — clients book directly in your calendar</div><div class="tool-best"><strong>Best for:</strong> Eliminating back-and-forth scheduling emails. Share your link, clients pick a slot, it syncs automatically. Standard from $10/user/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">Google Calendar</div><div class="tool-tag">Most widely used calendar tool for remote teams</div><div class="tool-best"><strong>Best for:</strong> Managing your own and clients' calendars, sharing availability, and syncing with every other tool. Free for individuals.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge ai">AI-Powered</span><span class="badge paid">Paid</span></div><div class="tool-name">Motion</div><div class="tool-tag">AI daily planner that auto-schedules tasks and meetings</div><div class="tool-best"><strong>Best for:</strong> VAs managing complex multi-client workloads who want AI to plan their day around priorities. From $19/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span><span class="badge ai">AI-Powered</span></div><div class="tool-name">Reclaim.ai</div><div class="tool-tag">Smart calendar that protects focus time and auto-schedules tasks</div><div class="tool-best"><strong>Best for:</strong> Protecting deep-work time while keeping meetings organised across time zones. Teams from $8/user/month.</div></div>
+  </div>
+
+  <div class="section-label"><div class="num">3</div><div class="icon">✅</div><h2>Task &amp; Project Management</h2></div>
+  <div class="tool-grid">
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">Trello</div><div class="tool-tag">Visual Kanban-style task boards — simple, intuitive, flexible</div><div class="tool-best"><strong>Best for:</strong> VAs who prefer a visual drag-and-drop approach. Perfect entry-level project management tool. Standard from $5/user/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">ClickUp</div><div class="tool-tag">All-in-one workspace: tasks, docs, goals, time tracking</div><div class="tool-best"><strong>Best for:</strong> VAs and EAs who want one tool for everything — tasks, notes, time tracking, and reporting. Unlimited from $7/user/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">Notion</div><div class="tool-tag">Flexible workspace combining notes, databases, tasks, and wikis</div><div class="tool-best"><strong>Best for:</strong> Building client knowledge bases, SOPs, project trackers, and internal wikis. Plus from $10/user/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">Asana</div><div class="tool-tag">Comprehensive project management with timelines and automation</div><div class="tool-best"><strong>Best for:</strong> Managing multiple client projects with deadlines, dependencies, and team collaboration. Premium from $10.99/user/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">Todoist</div><div class="tool-tag">Clean, simple task manager for daily priorities</div><div class="tool-best"><strong>Best for:</strong> Solo VAs who want a lightweight, distraction-free daily task list. Pro from $4/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">Zoho CRM</div><div class="tool-tag">Full-featured CRM for managing clients, leads, and workflows</div><div class="tool-best"><strong>Best for:</strong> VAs and EAs managing client pipelines, contact databases, and follow-up workflows. Free plan for up to 3 users. Standard from $14/user/month. <a href="https://www.zoho.com" target="_blank" rel="noopener">zoho.com</a></div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">HubSpot CRM</div><div class="tool-tag">Powerful CRM with marketing, sales, and contact management tools</div><div class="tool-best"><strong>Best for:</strong> VAs supporting client-facing teams — manage contacts, track deals, send emails, and automate follow-ups. Core CRM completely free. <a href="https://www.hubspot.com" target="_blank" rel="noopener">hubspot.com</a></div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">Monday.com</div><div class="tool-tag">Visual project and workflow management platform</div><div class="tool-best"><strong>Best for:</strong> VAs and EAs coordinating multiple projects across teams — visual boards, automations, and client dashboards in one place. Basic from $9/user/month. <a href="https://www.monday.com" target="_blank" rel="noopener">monday.com</a></div></div>
+  </div>
+  <div class="tip">💡 <strong>Tip:</strong> Trello is the easiest starting point. Once you outgrow it, move to ClickUp or Notion — both have generous free plans.</div>
+
+  <div class="section-label"><div class="num">4</div><div class="icon">📁</div><h2>File Storage, Documents &amp; Collaboration</h2></div>
+  <div class="tool-grid">
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">Google Drive + Workspace</div><div class="tool-tag">Cloud storage, Docs, Sheets, Slides — real-time collaboration</div><div class="tool-best"><strong>Best for:</strong> Sharing and collaborating on documents in real time. Most widely used platform among remote teams globally. From $6/user/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">Microsoft OneDrive + 365</div><div class="tool-tag">Cloud storage integrated with Word, Excel, Outlook, and Teams</div><div class="tool-best"><strong>Best for:</strong> EAs working in corporate environments or with clients using Microsoft products exclusively. M365 Personal from $6.99/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">Dropbox</div><div class="tool-tag">Reliable cloud storage with excellent version control</div><div class="tool-best"><strong>Best for:</strong> Storing and sharing large files, maintaining version history, and syncing across all devices. Plus from $11.99/month for 2TB.</div></div>
+  </div>
+
+  <div class="section-label"><div class="num">5</div><div class="icon">✉️</div><h2>Email Management &amp; Professional Writing</h2></div>
+  <div class="tool-grid">
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">Gmail + Google Workspace</div><div class="tool-tag">Most widely used professional email platform for remote teams</div><div class="tool-best"><strong>Best for:</strong> Managing multiple client inboxes with labels and filters. Integrates with every other tool. From $6/user/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span><span class="badge ai">AI-Powered</span></div><div class="tool-name">Grammarly</div><div class="tool-tag">AI writing assistant for grammar, tone, clarity, and professionalism</div><div class="tool-best"><strong>Best for:</strong> Ensuring every email and client communication is professional and error-free. Essential for client-facing VAs and EAs. Premium from $12/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">Boomerang for Gmail</div><div class="tool-tag">Schedule emails, set follow-up reminders, pause your inbox</div><div class="tool-best"><strong>Best for:</strong> EAs managing executive inboxes who need to schedule sends and ensure nothing slips. Personal from $4.99/month.</div></div>
+  </div>
+
+  <div class="section-label"><div class="num">6</div><div class="icon">⏱️</div><h2>Time Tracking &amp; Invoicing</h2></div>
+  <div class="tool-grid">
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">Clockify</div><div class="tool-tag">Free time-tracking for billable hours across clients and projects</div><div class="tool-best"><strong>Best for:</strong> VAs billing by the hour across multiple clients. Tracks time, generates reports, creates invoices. Pro from $3.99/user/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">Toggl Track</div><div class="tool-tag">Simple one-click time tracker with detailed reporting</div><div class="tool-best"><strong>Best for:</strong> VAs who want minimal friction — start/stop with one click, breakdowns by project and client. Starter from $9/user/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge paid">Paid</span></div><div class="tool-name">Harvest</div><div class="tool-tag">Time tracking, expense management, and invoicing in one tool</div><div class="tool-best"><strong>Best for:</strong> Freelance VAs and EAs who need to track time, log expenses, and invoice clients professionally. Pro from $10.80/user/month.</div></div>
+  </div>
+
+  <div class="section-label"><div class="num">7</div><div class="icon">💼</div><h2>Accounting, Bookkeeping &amp; Finance</h2></div>
+  <div class="tool-grid">
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">Wave</div><div class="tool-tag">Completely free accounting, invoicing, and receipt scanning</div><div class="tool-best"><strong>Best for:</strong> New VAs managing their own basic finances who need professional invoicing without paying for software. Core features completely free.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge paid">Trial Available</span></div><div class="tool-name">Xero</div><div class="tool-tag">Cloud-based accounting — invoicing, reconciliations, payroll, reporting</div><div class="tool-best"><strong>Best for:</strong> VAs handling full bookkeeping for clients — AP/AR, bank reconciliations, and financial reporting. Starter from $20/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge paid">Trial Available</span></div><div class="tool-name">QuickBooks Online</div><div class="tool-tag">Most widely used small business accounting software globally</div><div class="tool-best"><strong>Best for:</strong> EAs supporting US-based clients with financial admin and exporting data for Excel reporting. From $17.50/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge paid">Paid</span></div><div class="tool-name">FreshBooks</div><div class="tool-tag">Beginner-friendly accounting for freelancers</div><div class="tool-best"><strong>Best for:</strong> Solo VAs managing their own freelance finances with a simple, guided invoicing and accounting tool. Lite from $7.60/month.</div></div>
+  </div>
+  <div class="tip">💡 <strong>Tip:</strong> Start with Wave (free) for your own finances. Once you work with clients using Xero or QuickBooks, their data exports are where Excel skills become a major competitive advantage.</div>
+
+  <div class="section-label"><div class="num">8</div><div class="icon">🤖</div><h2>AI Productivity Tools</h2></div>
+  <div class="tool-grid">
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span><span class="badge ai">AI</span></div><div class="tool-name">Claude (Anthropic)</div><div class="tool-tag">Advanced AI for writing, analysis, research, and document work</div><div class="tool-best"><strong>Best for:</strong> Drafting professional emails, summarising documents, writing reports, and structured help with complex admin tasks. Pro from $20/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span><span class="badge ai">AI</span></div><div class="tool-name">ChatGPT (OpenAI)</div><div class="tool-tag">Versatile AI for drafting, brainstorming, formatting, and Q&amp;A</div><div class="tool-best"><strong>Best for:</strong> Writing assistance, content creation, email drafting, and research support for VAs handling diverse client tasks. Plus from $20/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span><span class="badge ai">AI</span></div><div class="tool-name">Fireflies.ai</div><div class="tool-tag">AI meeting recorder — transcribes, summarises, tracks action items</div><div class="tool-best"><strong>Best for:</strong> EAs attending meetings on behalf of executives — automatic transcription and action item extraction. Pro from $10/user/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span><span class="badge ai">AI</span></div><div class="tool-name">Otter.ai</div><div class="tool-tag">Real-time meeting transcription and note-taking AI</div><div class="tool-best"><strong>Best for:</strong> Accurate, searchable transcripts without manual note-taking. Free plan: 300 min/month. Pro from $8.33/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span><span class="badge ai">AI + Automation</span></div><div class="tool-name">Zapier</div><div class="tool-tag">Automation platform connecting apps to eliminate repetitive tasks</div><div class="tool-best"><strong>Best for:</strong> Automating workflows — new form → Trello card + Slack message + Google Sheet row, automatically. Professional from $19.99/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge paid">Requires M365</span><span class="badge ai">AI</span><span class="badge new">2025</span></div><div class="tool-name">Microsoft 365 Copilot</div><div class="tool-tag">AI built into Word, Excel, Outlook, and Teams</div><div class="tool-best"><strong>Best for:</strong> EAs in the Microsoft ecosystem who want AI to draft emails, summarise meetings, and build Excel formulas automatically. From $30/user/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge ai">AI</span><span class="badge new">Scientific</span></div><div class="tool-name">🔬 Bohrium</div><div class="tool-tag">AI platform for scientific research, simulation, and data analysis</div><div class="tool-best"><strong>Best for:</strong> EAs and VAs supporting research teams or science-driven organisations. <a href="https://bohrium.com" target="_blank" rel="noopener">bohrium.com</a></div></div>
+  </div>
+  <div class="tip">💡 <strong>Tip:</strong> Fireflies.ai or Otter.ai are must-haves for any EA supporting executives — never take manual meeting notes again. If you support a research team, explore <strong>Bohrium</strong>.</div>
+
+  <div class="section-label"><div class="num">9</div><div class="icon">🔐</div><h2>Password Management &amp; Security</h2></div>
+  <div class="tool-grid">
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">LastPass</div><div class="tool-tag">Secure password vault with auto-fill and multi-device sync</div><div class="tool-best"><strong>Best for:</strong> VAs managing multiple client accounts securely — share login access without exposing passwords. Teams from $4/user/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge paid">Paid</span></div><div class="tool-name">1Password</div><div class="tool-tag">Highly secure password manager trusted by enterprises globally</div><div class="tool-best"><strong>Best for:</strong> EAs handling sensitive client accounts who need enterprise-grade security and shared vaults. Individual from $2.99/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">NordPass</div><div class="tool-tag">Clean, easy-to-use password manager with end-to-end encryption</div><div class="tool-best"><strong>Best for:</strong> Solo VAs who want a simple, affordable way to manage all login credentials securely. Premium from $1.49/month.</div></div>
+  </div>
+  <div class="tip">💡 <strong>Tip:</strong> Never store client passwords in a spreadsheet or email. A password manager is non-negotiable — it protects both you and your clients.</div>
+
+  <div class="section-label"><div class="num">10</div><div class="icon">🎨</div><h2>Design, Presentations &amp; Content</h2></div>
+  <div class="tool-grid">
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">Canva</div><div class="tool-tag">Easy drag-and-drop design for non-designers</div><div class="tool-best"><strong>Best for:</strong> VAs creating professional presentations, social media graphics, newsletters, and documents without design experience. Pro from $14.99/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge paid">Requires M365</span></div><div class="tool-name">Microsoft PowerPoint</div><div class="tool-tag">Industry-standard presentation software — part of Microsoft 365</div><div class="tool-best"><strong>Best for:</strong> EAs preparing executive presentations and board decks where Microsoft compatibility is required. Included in M365 from $6.99/month.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">Notion</div><div class="tool-tag">All-in-one workspace for docs, wikis, databases, and project pages</div><div class="tool-best"><strong>Best for:</strong> Creating polished, shareable client knowledge bases, SOPs, and content pages. Plus from $10/user/month. <a href="https://notion.com" target="_blank" rel="noopener">notion.com</a></div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span><span class="badge ai">AI-Powered</span></div><div class="tool-name">Adobe Express</div><div class="tool-tag">Adobe's free design tool — templates, graphics, video, and branding</div><div class="tool-best"><strong>Best for:</strong> Polished, on-brand graphics, presentations, flyers, and short videos powered by Adobe AI (Firefly). Premium from $9.99/month. <a href="https://adobe.com/express" target="_blank" rel="noopener">adobe.com</a></div></div>
+  </div>
+
+  <div class="section-label"><div class="num">11</div><div class="icon">🎙️</div><h2>Note-Taking &amp; Voice-to-Text Conversion</h2></div>
+  <div class="tool-grid">
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free · Built-In</span></div><div class="tool-name">📱 Google Voice Typing</div><div class="tool-tag">Built into Android and Chrome — no app needed</div><div class="tool-best"><strong>Best for:</strong> Dictating emails and notes hands-free on Android or Chrome. Zero setup — activate via microphone icon on keyboard or Tools &gt; Voice Typing in Google Docs.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free · Built-In</span></div><div class="tool-name">📱 Gboard (Google Keyboard)</div><div class="tool-tag">Google's smart keyboard with built-in voice input</div><div class="tool-best"><strong>Best for:</strong> Dictating messages and emails from your phone in any app — WhatsApp, Gmail, Slack. Tap the microphone and speak. Free on Android and iOS.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free · Built-In</span></div><div class="tool-name">📱 Microsoft SwiftKey Keyboard</div><div class="tool-tag">AI-powered keyboard with voice dictation and smart predictions</div><div class="tool-best"><strong>Best for:</strong> VAs in the Microsoft ecosystem — learns your writing style and includes voice-to-text across all apps. Free on Android and iOS.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">📱 Otter.ai</div><div class="tool-tag">Best-in-class for long-form speech and meeting transcription</div><div class="tool-best"><strong>Best for:</strong> Transcribing long meetings and voice notes in real time. Free plan: 300 min/month. Pro from $8.33/month. <a href="https://otter.ai" target="_blank" rel="noopener">otter.ai</a></div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span></div><div class="tool-name">📱 Speechnotes</div><div class="tool-tag">Clean, distraction-free voice-to-text notepad</div><div class="tool-best"><strong>Best for:</strong> Quick voice dictation into a notepad you can copy anywhere. No account needed — works instantly in Chrome.</div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge free">Free Plan</span><span class="badge ai">AI</span></div><div class="tool-name">🔥 Fireflies.ai</div><div class="tool-tag">AI meeting recorder — transcribes, summarises, extracts action items</div><div class="tool-best"><strong>Best for:</strong> EAs attending meetings on behalf of executives — joins your call automatically, emails full transcript and action items. Pro from $10/user/month. <a href="https://fireflies.ai" target="_blank" rel="noopener">fireflies.ai</a></div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge paid">Paid</span></div><div class="tool-name">✍️ MyScript</div><div class="tool-tag">Converts handwritten notes on screen into typed text in real time</div><div class="tool-best"><strong>Best for:</strong> VAs and EAs who prefer writing by hand on a tablet — converts handwriting to digital text across 63 languages. <a href="https://myscript.com" target="_blank" rel="noopener">myscript.com</a></div></div>
+    <div class="tool-card"><div class="badge-row"><span class="badge paid">Paid</span></div><div class="tool-name">✍️ Paperlike (formerly Nebo)</div><div class="tool-tag">Premium handwriting-to-text app for iPad and tablet professionals</div><div class="tool-best"><strong>Best for:</strong> Remote professionals using an iPad with Apple Pencil — converts handwriting to text and exports to Word or PDF. <a href="https://paperlike.com" target="_blank" rel="noopener">paperlike.com</a></div></div>
+  </div>
+  <div class="tip">💡 <strong>Tip:</strong> Start with <strong>Google Voice Typing</strong> or <strong>Gboard</strong> — already on your phone, zero setup. For meeting transcription, <strong>Fireflies.ai</strong> free plan is the most powerful no-cost option available.</div>
+
+  <!-- STARTER STACK -->
+  <div class="starter">
+    <h2>Your <em>Free</em> Starter Stack</h2>
+    <p class="starter-sub">Set up all 11 of these on day one. Every tool has a free plan. Total monthly cost: R0.</p>
+    <div class="stack-grid">
+      <div class="stack-item"><div class="si-icon">💬</div><div><div class="si-cat">Communication</div><div class="si-tools">Slack + Zoom (free)</div></div></div>
+      <div class="stack-item"><div class="si-icon">📅</div><div><div class="si-cat">Scheduling</div><div class="si-tools">Google Calendar + Calendly (free)</div></div></div>
+      <div class="stack-item"><div class="si-icon">✅</div><div><div class="si-cat">Task Management</div><div class="si-tools">Trello or ClickUp (free)</div></div></div>
+      <div class="stack-item"><div class="si-icon">📁</div><div><div class="si-cat">File Storage &amp; Docs</div><div class="si-tools">Google Drive + Docs/Sheets (free)</div></div></div>
+      <div class="stack-item"><div class="si-icon">✉️</div><div><div class="si-cat">Email &amp; Writing</div><div class="si-tools">Gmail + Grammarly (free)</div></div></div>
+      <div class="stack-item"><div class="si-icon">⏱️</div><div><div class="si-cat">Time Tracking</div><div class="si-tools">Clockify or Wave (free)</div></div></div>
+      <div class="stack-item"><div class="si-icon">🔐</div><div><div class="si-cat">Password Security</div><div class="si-tools">NordPass or LastPass (free)</div></div></div>
+      <div class="stack-item"><div class="si-icon">🤖</div><div><div class="si-cat">AI Assistant</div><div class="si-tools">Claude or ChatGPT (free)</div></div></div>
+      <div class="stack-item"><div class="si-icon">🎙️</div><div><div class="si-cat">Meeting Transcription</div><div class="si-tools">Otter.ai or Fireflies.ai (free)</div></div></div>
+      <div class="stack-item"><div class="si-icon">📱</div><div><div class="si-cat">Voice-to-Text</div><div class="si-tools">Gboard + Speechnotes (free)</div></div></div>
+      <div class="stack-item"><div class="si-icon">⚡</div><div><div class="si-cat">Automation</div><div class="si-tools">Zapier (free — 100 tasks/month)</div></div></div>
+    </div>
+    <div class="free-banner">
+      Total monthly cost of this starter stack: <strong>R0</strong>
+      <span>Upgrade individual tools only as your client base and income grows.</span>
+    </div>
+  </div>
+
+</div><!-- end wide-wrap -->
+
+<footer class="site-footer">
+  © 2025 Cenel Cecelia Meintjes &nbsp;·&nbsp;
+  <a href="mailto:cecelia.meintjes@gmail.com">cecelia.meintjes@gmail.com</a> &nbsp;·&nbsp;
+  <a href="contact.html">Contact</a>
+</footer>
+
+<script>
+  function toggleNav() { document.getElementById('nav-links').classList.toggle('open'); }
+</script>
+</body>
+</html>

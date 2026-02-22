@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Cenel Cecelia Meintjes</title>
+  <meta name="description" content="Contact Cenel Meintjes — Senior EA & VA. Available for immediate start. Email, phone, WhatsApp, LinkedIn." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .contact-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:18px; margin-bottom:48px; }
+    .contact-card { background:var(--white); border:1px solid var(--border); border-radius:14px; padding:30px 26px; text-align:center; transition:transform .2s,box-shadow .2s; text-decoration:none; display:block; color:inherit; }
+    .contact-card:hover { transform:translateY(-4px); box-shadow:0 12px 32px rgba(15,39,68,.12); }
+    .cc-icon { font-size:2.4rem; margin-bottom:14px; display:block; }
+    .cc-label { font-size:11px; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--grey); margin-bottom:6px; }
+    .cc-value { font-size:1rem; font-weight:600; color:var(--blue); }
+    .cc-sub { font-size:13px; color:var(--grey); margin-top:5px; }
+    .availability { background:var(--navy); border-radius:16px; padding:36px 36px 32px; color:var(--white); margin-bottom:40px; }
+    .availability h3 { font-family:Arial,Helvetica,sans-serif;font-weight:700; font-size:1.4rem; color:var(--gold); margin-bottom:20px; }
+    .avail-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:12px; }
+    .avail-item { background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.12); border-radius:10px; padding:14px 18px; }
+    .ai-label { font-size:10px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--gold); margin-bottom:5px; }
+    .ai-val { font-size:13.5px; color:rgba(255,255,255,.85); line-height:1.5; }
+    .form-box { background:var(--white); border:1px solid var(--border); border-radius:16px; padding:36px 36px 32px; }
+    .form-box h3 { font-family:Arial,Helvetica,sans-serif;font-weight:700; font-size:1.4rem; color:var(--navy); margin-bottom:20px; }
+    .form-group { margin-bottom:18px; }
+    .form-group label { display:block; font-size:13px; font-weight:600; color:var(--navy); margin-bottom:6px; }
+    .form-group input, .form-group textarea, .form-group select { width:100%; background:var(--cream); border:1px solid var(--border); border-radius:8px; padding:12px 16px; font-family:Arial,Helvetica,sans-serif; font-size:14px; color:var(--navy); outline:none; transition:border .2s; }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color:var(--blue); background:var(--white); }
+    .form-group textarea { resize:vertical; min-height:130px; }
+    .form-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    .form-submit { display:inline-block; background:var(--blue); color:var(--white); font-family:Arial,Helvetica,sans-serif; font-size:15px; font-weight:600; padding:14px 36px; border-radius:100px; border:none; cursor:pointer; transition:background .2s,transform .2s; }
+    .form-submit:hover { background:var(--navy); transform:translateY(-2px); }
+    @media(max-width:600px){ .form-row { grid-template-columns:1fr; } .availability { padding:24px 18px; } .form-box { padding:24px 18px; } }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-brand">Cenel <span>Meintjes</span></a>
+  <button class="nav-toggle" onclick="toggleNav()" aria-label="Menu">☰</button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="about.html">👤 About Me</a></li>
+    <li><a href="toolkit.html">📱 Apps Remote Toolkit</a></li>
+    <li><a href="contact.html" class="active">✉️ Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <h1>Get In Touch</h1>
+  <p>Available for immediate start. Open to remote roles globally — UK, US, EU, and South Africa. Also willing to relocate for the right on-site opportunity.</p>
+</div>
+
+<div class="page-wrap">
+
+  <!-- CONTACT CARDS -->
+  <div class="section-block">
+    <h2 class="section-heading">Contact Details</h2>
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:cecelia.meintjes@gmail.com">
+        <span class="cc-icon">✉️</span>
+        <div class="cc-label">Email</div>
+        <div class="cc-value">cecelia.meintjes@gmail.com</div>
+        <div class="cc-sub">Click to open in your email app</div>
+      </a>
+      <a class="contact-card" href="tel:+27687382166">
+        <span class="cc-icon">📞</span>
+        <div class="cc-label">Phone &amp; WhatsApp</div>
+        <div class="cc-value">+27 68 738 2166</div>
+        <div class="cc-sub">South Africa (UTC+2) · WhatsApp preferred</div>
+      </a>
+      <a class="contact-card" href="https://linkedin.com/in/cenel-meintjes-428652375" target="_blank" rel="noopener">
+        <span class="cc-icon">🔗</span>
+        <div class="cc-label">LinkedIn</div>
+        <div class="cc-value">Cenel Meintjes</div>
+        <div class="cc-sub">Click to view full LinkedIn profile</div>
+      </a>
+      <a class="contact-card" href="index.html">
+        <span class="cc-icon">🌐</span>
+        <div class="cc-label">Website</div>
+        <div class="cc-value">cenelmeintjes.github.io</div>
+        <div class="cc-sub">You are here</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- AVAILABILITY -->
+  <div class="section-block">
+    <div class="availability">
+      <h3>📋 Availability &amp; Work Preferences</h3>
+      <div class="avail-grid">
+        <div class="avail-item"><div class="ai-label">Status</div><div class="ai-val">✅ Available for immediate start</div></div>
+        <div class="avail-item"><div class="ai-label">Work Type</div><div class="ai-val">Remote · Hybrid · On-Site (open to relocate)</div></div>
+        <div class="avail-item"><div class="ai-label">Time Zone</div><div class="ai-val">UTC+2 (SAST) — aligned to EST &amp; GMT</div></div>
+        <div class="avail-item"><div class="ai-label">Hours</div><div class="ai-val">Mon–Fri · Full-time or part-time</div></div>
+        <div class="avail-item"><div class="ai-label">Markets</div><div class="ai-val">South Africa · UK · US · EU · Global</div></div>
+        <div class="avail-item"><div class="ai-label">Remote Setup</div><div class="ai-val">Fibre internet + Inverter/UPS backup power</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT FORM -->
+  <div class="section-block">
+    <div class="form-box">
+      <h3>✉️ Send Me a Message</h3>
+      <!-- Replace action with your Formspree or Netlify Forms endpoint -->
+      <form action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name *</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject *</label>
+          <select id="subject" name="subject" required>
+            <option value="" disabled selected>Select a topic...</option>
+            <option>Job Opportunity — Remote EA/VA Role</option>
+            <option>Job Opportunity — On-Site Role</option>
+            <option>Freelance / Contract Work</option>
+            <option>General Enquiry</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" placeholder="Tell me about the role, project, or how I can help..." required></textarea>
+        </div>
+        <button type="submit" class="form-submit">Send Message →</button>
+      </form>
+    </div>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  © 2025 Cenel Cecelia Meintjes &nbsp;·&nbsp;
+  <a href="mailto:cecelia.meintjes@gmail.com">cecelia.meintjes@gmail.com</a> &nbsp;·&nbsp;
+  South Africa (UTC+2)
+</footer>
+
+<script>
+  function toggleNav() { document.getElementById('nav-links').classList.toggle('open'); }
+</script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cenel Cecelia Meintjes | VA & EA Professional</title>
+  <meta name="description" content="Senior VA & EA professional with 25+ years experience. Remote-ready, available immediately." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .home-hero { background:var(--navy); position:relative; overflow:hidden; padding:80px 24px 72px; text-align:center; }
+    .home-hero::before { content:''; position:absolute; inset:0; background: radial-gradient(ellipse 80% 60% at 15% 50%, rgba(59,157,225,.15) 0%, transparent 60%), radial-gradient(ellipse 60% 80% at 85% 20%, rgba(27,94,155,.3) 0%, transparent 60%); pointer-events:none; }
+    .home-photo { width:150px; height:150px; border-radius:50%; border:5px solid #e8a020; object-fit:cover; object-position:center top; margin:0 auto 24px; display:block; position:relative; box-shadow:0 0 0 3px rgba(232,160,32,0.35), 0 12px 40px rgba(0,0,0,.5); }
+    .home-name { font-family:Arial,Helvetica,sans-serif;font-weight:700; font-size:clamp(2.2rem,5vw,3.4rem); color:var(--white); line-height:1.12; margin-bottom:10px; position:relative; }
+    .home-tagline { font-size:1.05rem; color:var(--sky); font-weight:500; margin-bottom:10px; position:relative; }
+    .home-location { font-size:.9rem; color:rgba(255,255,255,.5); margin-bottom:30px; position:relative; }
+    .quick-nav { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px; max-width:900px; margin:56px auto 0; }
+    .qn-card { background:var(--white); border:1px solid var(--border); border-radius:16px; padding:32px 28px; text-align:center; text-decoration:none; color:inherit; transition:transform .22s,box-shadow .22s; display:block; }
+    .qn-card:hover { transform:translateY(-5px); box-shadow:0 16px 40px rgba(15,39,68,.13); }
+    .qn-icon { font-size:2.4rem; margin-bottom:14px; display:block; }
+    .qn-title { font-family:Arial,Helvetica,sans-serif;font-weight:700; font-size:1.25rem; color:var(--navy); margin-bottom:8px; }
+    .qn-desc { font-size:13.5px; color:var(--grey); line-height:1.6; }
+    .qn-link { display:inline-block; margin-top:16px; font-size:13px; font-weight:600; color:var(--blue); }
+    .value-strip { background:var(--cream); padding:60px 24px; text-align:center; }
+    .value-strip h2 { font-family:Arial,Helvetica,sans-serif;font-weight:700; font-size:1.8rem; color:var(--navy); margin-bottom:12px; }
+    .value-strip > p { font-size:1rem; color:var(--grey); max-width:540px; margin:0 auto 36px; line-height:1.75; }
+    .value-cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:16px; max-width:900px; margin:0 auto; }
+    .val-card { background:var(--white); border:1px solid var(--border); border-left:3px solid var(--blue); border-radius:0 12px 12px 0; padding:18px 20px; text-align:left; }
+    .val-card .vc-icon { font-size:1.5rem; margin-bottom:8px; display:block; }
+    .val-card .vc-title { font-weight:600; font-size:15px; color:var(--navy); margin-bottom:4px; }
+    .val-card .vc-text { font-size:13px; color:var(--grey); line-height:1.55; }
+    .affiliate-section { background:var(--light); border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:56px 24px; text-align:center; }
+    .affiliate-section h2 { font-family:Arial,Helvetica,sans-serif;font-weight:700; font-size:1.7rem; color:var(--navy); margin-bottom:10px; }
+    .affiliate-section > p { font-size:.95rem; color:var(--grey); max-width:520px; margin:0 auto 32px; line-height:1.75; }
+    .amazon-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:16px; max-width:960px; margin:0 auto; }
+    .amz-card { background:var(--white); border:1px solid var(--border); border-radius:12px; padding:22px 16px; text-align:center; transition:transform .2s,box-shadow .2s; }
+    .amz-card:hover { transform:translateY(-3px); box-shadow:0 8px 24px rgba(15,39,68,.1); }
+    .amz-card .az-icon { font-size:2rem; margin-bottom:12px; display:block; }
+    .amz-card .az-title { font-weight:600; font-size:14px; color:var(--navy); margin-bottom:6px; }
+    .amz-card .az-desc { font-size:12px; color:var(--grey); line-height:1.5; margin-bottom:14px; }
+    .amz-card .az-btn { display:inline-block; background:#FF9900; color:var(--white); font-size:12px; font-weight:700; padding:8px 18px; border-radius:100px; text-decoration:none; transition:background .2s; }
+    .amz-card .az-btn:hover { background:#e68900; }
+    .affiliate-disclaimer { font-size:11px; color:var(--grey); margin-top:24px; max-width:600px; margin-left:auto; margin-right:auto; line-height:1.6; }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-brand">Cenel <span>Meintjes</span></a>
+  <button class="nav-toggle" onclick="toggleNav()" aria-label="Menu">☰</button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html" class="active">🏠 Home</a></li>
+    <li><a href="about.html">👤 About Me</a></li>
+    <li><a href="toolkit.html">📱 Apps Remote Toolkit</a></li>
+    <li><a href="contact.html">✉️ Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="home-hero">
+  <img src="cenel-meintjes-profile.png" alt="Cenel Cecelia Meintjes" class="home-photo" />
+  <h1 class="home-name">Cenel Cecelia Meintjes</h1>
+  <p class="home-tagline">Senior Administrative Professional &nbsp;·&nbsp; EA &nbsp;·&nbsp; VA &nbsp;·&nbsp; Remote Operations</p>
+  <p class="home-location">📍 South Africa (UTC+2) &nbsp;·&nbsp; Open to Full Remote &nbsp;·&nbsp; UK / US / EU Global</p>
+  <div class="hero-pills">
+    <div class="hero-pill"><span>📅</span>25+ Years Experience</div>
+    <div class="hero-pill"><span>💻</span>Fully Remote-Ready</div>
+    <div class="hero-pill"><span>🌍</span>EST / GMT Aligned</div>
+    <div class="hero-pill"><span>⚡</span>Available Immediately</div>
+  </div>
+</div>
+
+<!-- QUICK NAV CARDS -->
+<div style="background:var(--navy); padding:0 24px 64px;">
+  <div class="quick-nav">
+    <a href="about.html" class="qn-card">
+      <span class="qn-icon">👤</span>
+      <div class="qn-title">About Me</div>
+      <div class="qn-desc">Professional summary, core skills, full experience timeline, and an Excel case study.</div>
+      <span class="qn-link">View Profile →</span>
+    </a>
+    <a href="toolkit.html" class="qn-card">
+      <span class="qn-icon">🛠️</span>
+      <div class="qn-title">VA & EA Toolkit</div>
+      <div class="qn-desc">50+ best tools for remote assistants across 11 categories — including a free starter stack.</div>
+      <span class="qn-link">Explore Tools →</span>
+    </a>
+    <a href="contact.html" class="qn-card">
+      <span class="qn-icon">✉️</span>
+      <div class="qn-title">Contact</div>
+      <div class="qn-desc">Email, phone, WhatsApp, or LinkedIn. Available for immediate start in any time zone.</div>
+      <span class="qn-link">Reach Out →</span>
+    </a>
+  </div>
+</div>
+
+<!-- WHY WORK WITH ME -->
+<div class="value-strip">
+  <h2>Why Work With Me?</h2>
+  <p>25+ years of proven administrative expertise across healthcare, hospitality, and corporate environments — with rock-solid remote infrastructure.</p>
+  <div class="value-cards">
+    <div class="val-card"><span class="vc-icon">📊</span><div class="vc-title">Advanced Excel & Reporting</div><div class="vc-text">Pivot Tables, XLOOKUP, SUMIFS, multi-sheet linked workbooks, and live reporting dashboards.</div></div>
+    <div class="val-card"><span class="vc-icon">💰</span><div class="vc-title">ICB Certified Bookkeeping</div><div class="vc-text">Bookkeeping to Trial Balance with Xero and Pastel. 89% distinction. Full AP/AR and reconciliations.</div></div>
+    <div class="val-card"><span class="vc-icon">🏥</span><div class="vc-title">Healthcare Administration</div><div class="vc-text">Medical aid authorisations, ICD-10 coding, funder liaison, and POPIA-compliant record keeping.</div></div>
+    <div class="val-card"><span class="vc-icon">⚡</span><div class="vc-title">Never-Offline Remote Setup</div><div class="vc-text">Fixed fibre internet with inverter/UPS backup power. Available through load-shedding.</div></div>
+  </div>
+</div>
+
+<!-- AMAZON AFFILIATE -->
+<div class="affiliate-section">
+  <h2>🛒 Recommended Remote Work Essentials</h2>
+  <p>Equipment I recommend for any VA or EA building a productive, professional home office setup.</p>
+
+  <div class="amazon-grid">
+    <div class="amz-card">
+      <span class="az-icon">🎧</span>
+      <div class="az-title">Noise-Cancelling Headset</div>
+      <div class="az-desc">Crystal-clear client calls with zero background noise.</div>
+      <a href="https://www.amazon.com/s?k=noise+cancelling+headset+for+work&tag=YOUR-TAG" class="az-btn" target="_blank" rel="noopener sponsored">View on Amazon →</a>
+    </div>
+    <div class="amz-card">
+      <span class="az-icon">🖥️</span>
+      <div class="az-title">Portable Monitor</div>
+      <div class="az-desc">Double your screen space for multitasking between client systems and spreadsheets.</div>
+      <a href="https://www.amazon.com/s?k=portable+monitor+USB+C&tag=YOUR-TAG" class="az-btn" target="_blank" rel="noopener sponsored">View on Amazon →</a>
+    </div>
+    <div class="amz-card">
+      <span class="az-icon">📷</span>
+      <div class="az-title">HD Webcam</div>
+      <div class="az-desc">Look professional on every Zoom and Teams call with crisp 1080p video.</div>
+      <a href="https://www.amazon.com/s?k=HD+webcam+1080p+home+office&tag=YOUR-TAG" class="az-btn" target="_blank" rel="noopener sponsored">View on Amazon →</a>
+    </div>
+    <div class="amz-card">
+      <span class="az-icon">⌨️</span>
+      <div class="az-title">Ergonomic Keyboard</div>
+      <div class="az-desc">Comfortable typing through long admin sessions — reduces wrist strain.</div>
+      <a href="https://www.amazon.com/s?k=ergonomic+keyboard+wireless+office&tag=YOUR-TAG" class="az-btn" target="_blank" rel="noopener sponsored">View on Amazon →</a>
+    </div>
+    <div class="amz-card">
+      <span class="az-icon">💡</span>
+      <div class="az-title">Ring / Desk Light</div>
+      <div class="az-desc">Look well-lit and professional on video calls regardless of natural lighting.</div>
+      <a href="https://www.amazon.com/s?k=ring+light+video+calls+desk&tag=YOUR-TAG" class="az-btn" target="_blank" rel="noopener sponsored">View on Amazon →</a>
+    </div>
+    <div class="amz-card">
+      <span class="az-icon">🖱️</span>
+      <div class="az-title">Wireless Mouse</div>
+      <div class="az-desc">Precision wireless mouse for productive, cable-free desktop working.</div>
+      <a href="https://www.amazon.com/s?k=wireless+mouse+office+ergonomic&tag=YOUR-TAG" class="az-btn" target="_blank" rel="noopener sponsored">View on Amazon →</a>
+    </div>
+  </div>
+
+  <p class="affiliate-disclaimer">⚠️ Affiliate Disclosure: Some links on this page are Amazon affiliate links. If you make a purchase through these links I may earn a small commission at no extra cost to you. I only recommend products relevant to remote work professionals.</p>
+</div>
+
+<footer class="site-footer">
+  © 2025 Cenel Cecelia Meintjes &nbsp;·&nbsp;
+  <a href="mailto:cecelia.meintjes@gmail.com">cecelia.meintjes@gmail.com</a> &nbsp;·&nbsp;
+  <a href="contact.html">Contact</a>
+</footer>
+
+<script>
+  function toggleNav() { document.getElementById('nav-links').classList.toggle('open'); }
+</script>
+</body>
+</html>
